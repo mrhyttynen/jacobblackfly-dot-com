@@ -1,0 +1,46 @@
+a#youtube {
+    background-image: url(logos/youtube-logo2.png);
+    display: block;
+    width: 300px;
+    height: 300px;
+  }
+
+a#instagram {
+    background-image: url(logos/ig5.png);
+    display: block;
+    width: 300px;
+    height: 300px;
+  }
+
+a#facebook {
+    background-image: url(logos/facebook-logo-bw.png);
+    display: block;
+    width: 300px;
+    height: 300px;
+  }
+
+#spotify {
+    background-image: url(logos/spotify-logo-bw.png);
+    display: block;
+    width: 300px;
+    height: 300px;
+  }
+
+.zoom {
+  /*padding: 50px;*/
+  transition: transform .4s; /* Animation */
+  /*width: 200px;
+  height: 200px;*/
+  /*margin: 0 auto;*/
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 300px 300px;
+  grid-gap: 20px;
+}
