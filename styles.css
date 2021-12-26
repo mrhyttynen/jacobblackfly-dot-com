@@ -59,9 +59,10 @@ a#facebook {
   transform: scale(1.1);
 }
 
-.grid {
+.logo_grid {
   display: grid;
   grid-template-columns: 300px 300px;
   grid-template-rows: 300px 300px;
   grid-gap: 20px;
 }
+
