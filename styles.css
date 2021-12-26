@@ -59,10 +59,54 @@ a#facebook {
   transform: scale(1.1);
 }
 
-.logo_grid {
+.logo-grid {
   display: grid;
   grid-template-columns: 300px 300px;
   grid-template-rows: 300px 300px;
   grid-gap: 20px;
 }
 
+
+/* naming css grid areas for whole page */
+
+.main-header {
+  grid-area: mainheader;
+  /* Center horizontally*/
+  margin: 0 auto;
+}
+
+.logo-grid {
+  grid-area: logogrid;
+  /* Center horizontally*/
+  margin: 0 auto;
+}
+
+.sub-header {
+  grid-area: subheader;
+  /* Center horizontally*/
+  margin: 0 auto;
+}
+
+.embedded-vid {
+  grid-area: embeddedvid;
+  /* Center horizontally*/
+  margin: 0 auto;
+}
+
+
+/* applying css grid to all the above elements (which are all 
+inside the wrapper element) 
+This is not needed to centre everything, but will be useful for creating responsive layout
+see
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Realizing_common_layouts_using_CSS_Grid_Layout
+
+*/
+.wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "mainheader"
+    "logogrid"
+    "subheader"
+    "embeddedvid";
+}
