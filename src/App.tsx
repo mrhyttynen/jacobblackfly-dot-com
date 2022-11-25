@@ -2,16 +2,19 @@ import React from 'react';
 import './App.css';
 import ChannelTrailerEmbedded from './components/ChannelTrailerEmbedded';
 import LatestVideoEmbedded from './components/LatestVideoEmbedded';
+import SocialMediaLinks from './components/SocialMediaLinks';
+import { VerticalFlexBox } from './styles/styles';
 
 function App() {
   return (
     <div className="App">
       <body>
-        <div className="flexbox-container">
+        <VerticalFlexBox>
           <h1 className="main-header">Welcome to my website :)</h1>
           <LatestVideoEmbedded/>
           <ChannelTrailerEmbedded/>
-        </div>
+          <SocialMediaLinks/>
+        </VerticalFlexBox>
       </body>
     </div>
   );
