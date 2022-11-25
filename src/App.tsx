@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <body>
         <VerticalFlexBox>
-          <h1 className="main-header">Welcome to my website :)</h1>
+          <h1 className="main-header">🎵 JACOBBLACKFLY.COM 🎵</h1>
           <LatestVideoEmbedded/>
           <ChannelTrailerEmbedded/>
           <SocialMediaLinks/>

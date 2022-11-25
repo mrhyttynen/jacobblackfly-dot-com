@@ -1,9 +1,22 @@
+
+
 .zoom {
   transition: transform .4s;
 }
 
 .zoom:hover {
   transform: scale(1.1);
+}
+
+h1, h2 span {
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px
+}
+
+body {
+  background-image: url(../images/lake_district.jpg);
+  background-position: top 30% right 50%;
+  background-attachment: fixed;
 }
 
 a#instagram {
