@@ -13,3 +13,8 @@ export const HorizontalFlexBox = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+export const SpanWithWhiteBackground = styled.span`
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+`;
