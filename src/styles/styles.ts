@@ -15,6 +15,12 @@ export const HorizontalFlexBox = styled.div`
 `;
 
 export const SpanWithWhiteBackground = styled.span`
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   border-radius: 3px;
+`;
+
+export const DivWithWhiteBackgroundAndBlackBorders = styled.div`
+  border: 10px solid;
+  border-color: black;
+  background-color: white;
 `;

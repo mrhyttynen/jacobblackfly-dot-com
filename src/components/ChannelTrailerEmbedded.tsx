@@ -1,5 +1,6 @@
 import React from 'react';
 
+// TODO: need to make a channel trailer
 const ChannelTrailerEmbedded: React.FC = () => {
   return (
     <div>
