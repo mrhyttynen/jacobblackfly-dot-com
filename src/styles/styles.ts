@@ -19,8 +19,21 @@ export const SpanWithWhiteBackground = styled.span`
   border-radius: 3px;
 `;
 
-export const DivWithWhiteBackgroundAndBlackBorders = styled.div`
+export const DivWithWhiteBackgroundAndBlackBordersThick = styled.div`
   border: 10px solid;
   border-color: black;
   background-color: white;
 `;
+
+export const DivWithWhiteBackgroundAndBlackBordersThin = styled.div`
+  border: 2px solid;
+  border-color: black;
+  background-color: white;
+  margin: 20px
+`;
+
+export const H1WithWhiteBackgroundAndBlackBordrers = styled.h1`
+  border: 6px solid;
+  border-color: black;
+  background-color: white;
+`
