@@ -34,7 +34,7 @@ export const DivWithWhiteBackgroundAndBlackBordersThin = styled.div`
 
 // responsive fontsize (vw = viewport width)
 export const H1WithWhiteBackgroundAndBlackBordrers = styled.h1`
-  font-size: 7vw;
+  font-size: 6vw;
   border: 6px solid;
   border-color: black;
   background-color: white;
