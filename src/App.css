@@ -8,7 +8,7 @@
   transform: scale(1.1);
 }
 
-h1, h2 span {
+h2 span {
   background-color: rgb(255, 255, 255);
   border-radius: 3px
 }
