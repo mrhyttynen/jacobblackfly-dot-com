@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders app that matches snapshot 1`] = `
+<div
+  className="App"
+>
+  <body>
+    <div
+      className="sc-bcXHqe blMqrl"
+    >
+      <h1
+        className="sc-jSUZER hjBDMm"
+      >
+        🎵 JACOBBLACKFLY.COM 🎵
+      </h1>
+      <div
+        className="sc-eDvSVe WRHbF"
+      >
+        Listen to my new rap about carrot cake below:
+      </div>
+      <div
+        className="sc-hLBbgP hdcvoi"
+      >
+        <div
+          className="sc-bcXHqe blMqrl"
+        >
+          <a
+            className="zoom"
+            href="https://www.youtube.com/watch?v=triJ-gSDO38"
+            id="youtube"
+          >
+            carrotcake_youtube
+          </a>
+          <a
+            className="zoom"
+            href="https://open.spotify.com/track/0zbRd7eFUagrxQfX0BSN5p?si=VJw55mIESuCkVnjaNztklA"
+            id="spotify"
+          >
+            carrotcake_spotify
+          </a>
+          <a
+            className="zoom"
+            href="https://music.apple.com/gb/album/180-degrees-carrot-cake-song/1695665758?i=1695665759"
+            id="apple_music"
+          >
+            carrotcake_apple
+          </a>
+          <a
+            className="zoom"
+            href="https://music.amazon.co.uk/albums/B0CB2JNF88?marketplaceId=A1F83G8C2ARO7P&musicTerritory=GB&ref=dm_sh_2RkvvEIzWAsR5dySabqS0yCFd&trackAsin=B0CB2SF4C2"
+            id="amazon_music"
+          >
+            carrotcake_amazon
+          </a>
+        </div>
+      </div>
+      <div
+        className="sc-eDvSVe WRHbF"
+      >
+        Social media thingies
+      </div>
+      <div
+        className="sc-hLBbgP hdcvoi"
+      >
+        <div
+          className="sc-bcXHqe blMqrl"
+        >
+          <a
+            className="zoom"
+            href="https://www.instagram.com/jacobblackfly/"
+            id="instagram"
+          >
+            instagram_link
+          </a>
+          <a
+            className="zoom"
+            href="https://www.facebook.com/jacobbblackfly/"
+            id="facebook"
+          >
+            facebook_link
+          </a>
+        </div>
+      </div>
+      <div
+        className="sc-eDvSVe WRHbF"
+      >
+        Thanks for visiting my page and have a great day! :)
+      </div>
+    </div>
+  </body>
+</div>
+`;
