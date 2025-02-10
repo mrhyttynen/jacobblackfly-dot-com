@@ -14,15 +14,63 @@ exports[`App renders app that matches snapshot 1`] = `
         🎵 JACOBBLACKFLY.COM 🎵
       </h1>
       <div
-        className="sc-eDvSVe WRHbF"
+        className="sc-eDvSVe btopfk"
       >
-        Listen to my new rap about carrot cake below:
+        Listen to my new song "Searching":
+      </div>
+      <div>
+        <img
+          alt="Man playing piano over a blue background"
+          src="searching-coverphoto.jpeg"
+          width="300"
+        />
       </div>
       <div
-        className="sc-hLBbgP hdcvoi"
+        className="sc-hLBbgP dgmzqa"
       >
         <div
-          className="sc-bcXHqe blMqrl"
+          className="sc-gswNZR iBuoSt"
+        >
+          <a
+            className="zoom"
+            href="https://open.spotify.com/album/2hqZceh2GVkHgqy5mt2Rbg"
+            id="spotify"
+          >
+            searching_spotify
+          </a>
+          <a
+            className="zoom"
+            href="https://music.apple.com/us/album/searching/1794303799"
+            id="apple_music"
+          >
+            searching_apple
+          </a>
+          <a
+            className="zoom"
+            href="https://www.amazon.com/music/player/tracks/B0DVQ54M2L"
+            id="amazon_music"
+          >
+            searching_amazon
+          </a>
+        </div>
+      </div>
+      <div
+        className="sc-eDvSVe btopfk"
+      >
+        Listen to my rap about carrot cake below:
+      </div>
+      <div>
+        <img
+          alt="An oven overlaid with text: '180 Degrees'"
+          src="carrotcake-coverphoto.jpeg"
+          width="300"
+        />
+      </div>
+      <div
+        className="sc-hLBbgP dgmzqa"
+      >
+        <div
+          className="sc-gswNZR iBuoSt"
         >
           <a
             className="zoom"
@@ -55,12 +103,12 @@ exports[`App renders app that matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-eDvSVe WRHbF"
+        className="sc-eDvSVe btopfk"
       >
         Social media thingies
       </div>
       <div
-        className="sc-hLBbgP hdcvoi"
+        className="sc-hLBbgP dgmzqa"
       >
         <div
           className="sc-bcXHqe blMqrl"
@@ -82,7 +130,7 @@ exports[`App renders app that matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-eDvSVe WRHbF"
+        className="sc-eDvSVe btopfk"
       >
         Thanks for visiting my page and have a great day! :)
       </div>
