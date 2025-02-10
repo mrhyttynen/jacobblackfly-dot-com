@@ -3,6 +3,7 @@ import './App.css';
 import SocialMediaLinks from './components/SocialMediaLinks';
 import { DivWithWhiteBackgroundAndBlackBordersThin, H1WithWhiteBackgroundAndBlackBordrers, VerticalFlexBox } from './styles/styles';
 import { SearchingLinks, CarrotCakeLinks } from './components/MusicLinks';
+import { CarrotCakeImage, SearchingImage } from './components/Images';
 
 function App() {
   return (
@@ -11,10 +12,10 @@ function App() {
         <VerticalFlexBox>
           <H1WithWhiteBackgroundAndBlackBordrers>🎵 JACOBBLACKFLY.COM 🎵</H1WithWhiteBackgroundAndBlackBordrers>
           <DivWithWhiteBackgroundAndBlackBordersThin>Listen to my new song "Searching":</DivWithWhiteBackgroundAndBlackBordersThin>
-          {/* add pic */}
+          <SearchingImage />
           <SearchingLinks />
           <DivWithWhiteBackgroundAndBlackBordersThin>Listen to my rap about carrot cake below:</DivWithWhiteBackgroundAndBlackBordersThin>
-          {/* add pic */}
+          <CarrotCakeImage />
           <CarrotCakeLinks />
           <DivWithWhiteBackgroundAndBlackBordersThin>Social media thingies</DivWithWhiteBackgroundAndBlackBordersThin>
           <SocialMediaLinks />
