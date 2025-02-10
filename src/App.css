@@ -14,7 +14,8 @@ h2 span {
 }
 
 body {
-  background: linear-gradient(#1b02fb, #00042a);
+  background: linear-gradient(#1b02fb, #00095b);
+  font-family: 'Rubik', monospace;
   background-attachment: fixed;
 }
 

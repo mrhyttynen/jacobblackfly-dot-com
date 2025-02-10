@@ -19,17 +19,19 @@ export const SpanWithWhiteBackground = styled.span`
   border-radius: 3px;
 `;
 
-export const DivWithWhiteBackgroundAndBlackBordersThick = styled.div`
+export const DivWithWhiteBackgroundAndBlackBordersThick = styled.div` 
   border: 10px solid;
   border-color: black;
   background-color: white;
+  padding: 2px;
 `;
 
 export const DivWithWhiteBackgroundAndBlackBordersThin = styled.div`
   border: 2px solid;
   border-color: black;
   background-color: white;
-  margin: 20px
+  margin: 20px;
+  padding: 4px;
 `;
 
 // responsive fontsize (vw = viewport width) on mobile devices only
