@@ -14,7 +14,7 @@ h2 span {
 }
 
 body {
-  background-image: url(../images/carrots-combined.png);
+  background: linear-gradient(#1b02fb, #00042a);
   background-attachment: fixed;
 }
 
