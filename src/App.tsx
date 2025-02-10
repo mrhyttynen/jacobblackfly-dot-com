@@ -14,7 +14,7 @@ function App() {
           <DivWithWhiteBackgroundAndBlackBordersThin>Listen to my new song "Searching":</DivWithWhiteBackgroundAndBlackBordersThin>
           <SearchingImage />
           <SearchingLinks />
-          <DivWithWhiteBackgroundAndBlackBordersThin>Listen to my rap about carrot cake below:</DivWithWhiteBackgroundAndBlackBordersThin>
+          <DivWithWhiteBackgroundAndBlackBordersThin>Listen to 180 Degrees (Carrot Cake Song) below:</DivWithWhiteBackgroundAndBlackBordersThin>
           <CarrotCakeImage />
           <CarrotCakeLinks />
           <DivWithWhiteBackgroundAndBlackBordersThin>Social media thingies</DivWithWhiteBackgroundAndBlackBordersThin>
