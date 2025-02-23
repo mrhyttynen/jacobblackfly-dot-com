@@ -6,126 +6,139 @@ exports[`App renders app that matches snapshot 1`] = `
 >
   <body>
     <div
-      className="sc-bcXHqe blMqrl"
+      className="sc-bcXHqe gkJjOJ"
     >
       <h1
-        className="sc-jSUZER hjBDMm"
+        className="sc-jSUZER eigUHz"
       >
-        🎵 JACOBBLACKFLY.COM 🎵
+        JACOBBLACKFLY.COM
       </h1>
       <div
-        className="sc-gswNZR iBuoSt"
+        className="sc-gswNZR cEnbaZ"
       >
         <button
+          className="px-4 py-2 rounded-lg transition-all duration-300 text-white bg-blue-600 hover:bg-blue-600"
           onClick={[Function]}
         >
           Home
         </button>
         <button
+          className="px-4 py-2 rounded-lg transition-all duration-300 text-white bg-slate-500 hover:bg-gray-600"
           onClick={[Function]}
         >
           About
         </button>
       </div>
       <div
-        className="sc-eDvSVe eLESKG"
-      >
-        Listen to my new song "Searching":
-      </div>
-      <div>
-        <img
-          alt="Man playing piano over a blue background"
-          src="searching-coverphoto.jpeg"
-          width="300"
-        />
-      </div>
-      <div
-        className="sc-hLBbgP dgmzqa"
+        className="sc-bcXHqe gkJjOJ"
       >
         <div
-          className="sc-gswNZR iBuoSt"
+          className="sc-eDvSVe fOeEwg"
         >
-          <a
-            className="zoom"
-            href="https://open.spotify.com/album/2hqZceh2GVkHgqy5mt2Rbg"
-            id="spotify"
+          Listen to my new song "Searching"
+        </div>
+        <div>
+          <img
+            alt="Man playing piano over a blue background"
+            src="searching-coverphoto.jpeg"
+            width="300"
+          />
+        </div>
+        <div
+          className="sc-hLBbgP dgmzqa"
+        >
+          <div
+            className="sc-gswNZR cEnbaZ"
           >
-            searching_spotify
-          </a>
-          <a
-            className="zoom"
-            href="https://music.apple.com/us/album/searching/1794303799"
-            id="apple_music"
+            <a
+              className="zoom"
+              href="https://open.spotify.com/album/2hqZceh2GVkHgqy5mt2Rbg"
+              id="spotify"
+            >
+              searching_spotify
+            </a>
+            <a
+              className="zoom"
+              href="https://youtu.be/drN7_hmVLh4"
+              id="youtube"
+            >
+              searching_youtube
+            </a>
+            <a
+              className="zoom"
+              href="https://music.apple.com/us/album/searching/1794303799"
+              id="apple_music"
+            >
+              searching_apple
+            </a>
+            <a
+              className="zoom"
+              href="https://www.amazon.com/music/player/tracks/B0DVQ54M2L"
+              id="amazon_music"
+            >
+              searching_amazon
+            </a>
+          </div>
+        </div>
+        <div
+          className="sc-eDvSVe fOeEwg"
+        >
+          Listen to "180 Degrees (Carrot Cake Song)"
+        </div>
+        <div>
+          <img
+            alt="An oven overlaid with text: '180 Degrees'"
+            src="carrotcake-coverphoto.jpeg"
+            width="300"
+          />
+        </div>
+        <div
+          className="sc-hLBbgP dgmzqa"
+        >
+          <div
+            className="sc-gswNZR cEnbaZ"
           >
-            searching_apple
-          </a>
-          <a
-            className="zoom"
-            href="https://www.amazon.com/music/player/tracks/B0DVQ54M2L"
-            id="amazon_music"
-          >
-            searching_amazon
-          </a>
+            <a
+              className="zoom"
+              href="https://open.spotify.com/track/0zbRd7eFUagrxQfX0BSN5p?si=VJw55mIESuCkVnjaNztklA"
+              id="spotify"
+            >
+              carrotcake_spotify
+            </a>
+            <a
+              className="zoom"
+              href="https://youtu.be/BMzRTILK1Aw"
+              id="youtube"
+            >
+              carrotcake_youtube
+            </a>
+            <a
+              className="zoom"
+              href="https://music.apple.com/gb/album/180-degrees-carrot-cake-song/1695665758?i=1695665759"
+              id="apple_music"
+            >
+              carrotcake_apple
+            </a>
+            <a
+              className="zoom"
+              href="https://music.amazon.co.uk/albums/B0CB2JNF88?marketplaceId=A1F83G8C2ARO7P&musicTerritory=GB&ref=dm_sh_2RkvvEIzWAsR5dySabqS0yCFd&trackAsin=B0CB2SF4C2"
+              id="amazon_music"
+            >
+              carrotcake_amazon
+            </a>
+          </div>
         </div>
       </div>
       <div
-        className="sc-eDvSVe eLESKG"
+        className="sc-eDvSVe fOeEwg"
       >
-        Listen to 180 Degrees (Carrot Cake Song):
-      </div>
-      <div>
-        <img
-          alt="An oven overlaid with text: '180 Degrees'"
-          src="carrotcake-coverphoto.jpeg"
-          width="300"
-        />
+        Follow me
       </div>
       <div
         className="sc-hLBbgP dgmzqa"
       >
         <div
-          className="sc-gswNZR iBuoSt"
-        >
-          <a
-            className="zoom"
-            href="https://www.youtube.com/watch?v=triJ-gSDO38"
-            id="youtube"
-          >
-            carrotcake_youtube
-          </a>
-          <a
-            className="zoom"
-            href="https://open.spotify.com/track/0zbRd7eFUagrxQfX0BSN5p?si=VJw55mIESuCkVnjaNztklA"
-            id="spotify"
-          >
-            carrotcake_spotify
-          </a>
-          <a
-            className="zoom"
-            href="https://music.apple.com/gb/album/180-degrees-carrot-cake-song/1695665758?i=1695665759"
-            id="apple_music"
-          >
-            carrotcake_apple
-          </a>
-          <a
-            className="zoom"
-            href="https://music.amazon.co.uk/albums/B0CB2JNF88?marketplaceId=A1F83G8C2ARO7P&musicTerritory=GB&ref=dm_sh_2RkvvEIzWAsR5dySabqS0yCFd&trackAsin=B0CB2SF4C2"
-            id="amazon_music"
-          >
-            carrotcake_amazon
-          </a>
-        </div>
-      </div>
-      <div
-        className="sc-eDvSVe eLESKG"
-      >
-        Follow me:
-      </div>
-      <div
-        className="sc-hLBbgP dgmzqa"
-      >
-        <div
-          className="sc-gswNZR iBuoSt"
+          className="sc-gswNZR cEnbaZ"
         >
           <a
             className="zoom"
@@ -144,7 +157,7 @@ exports[`App renders app that matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-eDvSVe eLESKG"
+        className="sc-eDvSVe fOeEwg"
       >
         Thanks for visiting my page and have a great day! :)
       </div>

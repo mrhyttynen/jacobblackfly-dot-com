@@ -5,6 +5,8 @@ export const VerticalFlexBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 5px;
+  margin-top: 7px;
 `;
 
 export const HorizontalFlexBox = styled.div`
@@ -29,23 +31,24 @@ export const DivWithWhiteBackgroundAndBlackBordersThick = styled.div`
 
 export const DivWithWhiteBackgroundAndBlackBordersThin = styled.div`
   max-width: 750px; 
-  border: 2px solid;
+  border: 3px solid;
   border-color: black;
   background-color: white;
-  margin: 20px;
+  margin-top: 25px;
+  margin-bottom: 3px;
   padding: 4px;
 `;
 
 // responsive fontsize (vw = viewport width) on mobile devices only
 export const H1WithWhiteBackgroundAndBlackBordrers = styled.h1`
-font-size: 1.6rem;  
+font-size: 2rem;  
 border: 6px solid;
-  border-color: black;
-  background-color: white;
+border-color: black;
+background-color: white;
 
-  @media only screen and (max-width: 600px) {
-    {
-      font-size: 6vw;
-    }
+@media only screen and (max-width: 600px) {
+  {
+    font-size: 6vw;
   }
+}
 `

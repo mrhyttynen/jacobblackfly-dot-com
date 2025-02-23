@@ -10,10 +10,10 @@ function App() {
     <div className="App">
       <body>
         <VerticalFlexBox>
-          <H1WithWhiteBackgroundAndBlackBordrers>🎵 JACOBBLACKFLY.COM 🎵</H1WithWhiteBackgroundAndBlackBordrers>
-          <HomeOrAboutToggle onReadBio={()=>setShowBio(true)} onGoHome={()=>setShowBio(false)}/>
+          <H1WithWhiteBackgroundAndBlackBordrers>JACOBBLACKFLY.COM</H1WithWhiteBackgroundAndBlackBordrers>
+          <HomeOrAboutToggle onReadBio={()=>setShowBio(true)} onGoHome={()=>setShowBio(false)} showBio={showBio}/>
           <HomeOrAboutPage showBio={showBio} />
-          <DivWithWhiteBackgroundAndBlackBordersThin>Follow me:</DivWithWhiteBackgroundAndBlackBordersThin>
+          <DivWithWhiteBackgroundAndBlackBordersThin>Follow me</DivWithWhiteBackgroundAndBlackBordersThin>
           <SocialMediaLinks />
           <DivWithWhiteBackgroundAndBlackBordersThin>Thanks for visiting my page and have a great day! :)</DivWithWhiteBackgroundAndBlackBordersThin>
         </VerticalFlexBox>

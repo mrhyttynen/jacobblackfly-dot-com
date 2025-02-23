@@ -21,9 +21,11 @@ of his tracks to form a catchy yet intriguing listening experience.
 Encouraged from a young age by his parents to pursue a musical hobby, Jacob undertook eight years of 
 classical piano and music theory training, which enabled him to start writing his own music upon reaching 
 university to study Economics. Performances of classical works as member of various choirs including the 
-Brighton Festival Chorus [LINK] and Savolaisen Osakunnan Laulajat [LINK] developed Jacob as a singer and 
-performer. After working as a software engineer for 3 years Jacob quit his job to be able to devote more 
-time to music, getting accepted to the music program at Laajasalon Opisto.
+<a href="https://bfc.org.uk/" target="_blank" className="linkinsidetext"> Brighton Festival Chorus</a> and 
+<a href="https://solkuoro.fi/" target="_blank" className="linkinsidetext"> Savolaisen Osakunnan Laulajat </a>
+developed Jacob as a singer and performer. After working as a software engineer for 3 years 
+Jacob quit his job to be able to devote more time to music, getting accepted to the music 
+program at Laajasalon Opisto.
 <br></br>
 <br></br>
 Jacob’s most recent projects include 2 single releases, “180 Degrees” and “Searching”, the former reaching 
