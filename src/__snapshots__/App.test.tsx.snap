@@ -14,7 +14,21 @@ exports[`App renders app that matches snapshot 1`] = `
         🎵 JACOBBLACKFLY.COM 🎵
       </h1>
       <div
-        className="sc-eDvSVe btopfk"
+        className="sc-gswNZR iBuoSt"
+      >
+        <button
+          onClick={[Function]}
+        >
+          Home
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          About
+        </button>
+      </div>
+      <div
+        className="sc-eDvSVe eLESKG"
       >
         Listen to my new song "Searching":
       </div>
@@ -55,9 +69,9 @@ exports[`App renders app that matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-eDvSVe btopfk"
+        className="sc-eDvSVe eLESKG"
       >
-        Listen to 180 Degrees (Carrot Cake Song) below:
+        Listen to 180 Degrees (Carrot Cake Song):
       </div>
       <div>
         <img
@@ -103,15 +117,15 @@ exports[`App renders app that matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-eDvSVe btopfk"
+        className="sc-eDvSVe eLESKG"
       >
-        Social media thingies
+        Follow me:
       </div>
       <div
         className="sc-hLBbgP dgmzqa"
       >
         <div
-          className="sc-bcXHqe blMqrl"
+          className="sc-gswNZR iBuoSt"
         >
           <a
             className="zoom"
@@ -130,7 +144,7 @@ exports[`App renders app that matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-eDvSVe btopfk"
+        className="sc-eDvSVe eLESKG"
       >
         Thanks for visiting my page and have a great day! :)
       </div>

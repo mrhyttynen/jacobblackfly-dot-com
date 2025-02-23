@@ -27,6 +27,7 @@ export const DivWithWhiteBackgroundAndBlackBordersThick = styled.div`
 `;
 
 export const DivWithWhiteBackgroundAndBlackBordersThin = styled.div`
+  max-width: 750px; 
   border: 2px solid;
   border-color: black;
   background-color: white;
