@@ -12,6 +12,7 @@ export const HorizontalFlexBox = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 5px;
 `;
 
 export const SpanWithWhiteBackground = styled.span`
