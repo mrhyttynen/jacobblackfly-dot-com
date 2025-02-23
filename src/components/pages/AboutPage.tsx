@@ -1,4 +1,4 @@
-import { DivWithWhiteBackgroundAndBlackBordersThin } from "../styles/styles";
+import { DivWithWhiteBackgroundAndBlackBordersThin } from "../../styles/styles";
 
 export const AboutPage: React.FC = () => {
   return (

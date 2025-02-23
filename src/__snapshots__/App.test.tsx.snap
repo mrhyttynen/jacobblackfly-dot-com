@@ -23,7 +23,13 @@ exports[`App renders app that matches snapshot 1`] = `
           Home
         </button>
         <button
-          className="px-4 py-2 rounded-lg transition-all duration-300 text-white bg-slate-500 hover:bg-gray-600"
+          className="px-4 py-2 rounded-lg transition-all duration-300 text-white bg-slate-500 hover:bg-blue-700"
+          onClick={[Function]}
+        >
+          Videos
+        </button>
+        <button
+          className="px-4 py-2 rounded-lg transition-all duration-300 text-white bg-slate-500 hover:bg-blue-700"
           onClick={[Function]}
         >
           About
@@ -33,7 +39,7 @@ exports[`App renders app that matches snapshot 1`] = `
         className="sc-bcXHqe gkJjOJ"
       >
         <div
-          className="sc-eDvSVe fOeEwg"
+          className="sc-eDvSVe fBBjVj"
         >
           Listen to my new song "Searching"
         </div>
@@ -81,7 +87,7 @@ exports[`App renders app that matches snapshot 1`] = `
           </div>
         </div>
         <div
-          className="sc-eDvSVe fOeEwg"
+          className="sc-eDvSVe fBBjVj"
         >
           Listen to "180 Degrees (Carrot Cake Song)"
         </div>
@@ -130,7 +136,7 @@ exports[`App renders app that matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-eDvSVe fOeEwg"
+        className="sc-eDvSVe fBBjVj"
       >
         Follow me
       </div>
@@ -157,7 +163,7 @@ exports[`App renders app that matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-eDvSVe fOeEwg"
+        className="sc-eDvSVe fBBjVj"
       >
         Thanks for visiting my page and have a great day! :)
       </div>
