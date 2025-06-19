@@ -1,5 +1,13 @@
 import React from 'react';
 
+export const AvoidantImage: React.FC = () => {
+  return (
+    <div>
+      <img src="avoidant-coverphoto.jpeg" alt="Magnet and man" width="300" />
+    </div>
+  );
+};
+
 export const SearchingImage: React.FC = () => {
   return (
     <div>

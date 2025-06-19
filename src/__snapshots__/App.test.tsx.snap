@@ -41,7 +41,55 @@ exports[`App renders app that matches snapshot 1`] = `
         <div
           className="sc-eDvSVe fBBjVj"
         >
-          Listen to my new song "Searching"
+          Listen to "Avoidant"
+        </div>
+        <div>
+          <img
+            alt="Magnet and man"
+            src="avoidant-coverphoto.jpeg"
+            width="300"
+          />
+        </div>
+        <div
+          className="sc-hLBbgP dgmzqa"
+        >
+          <div
+            className="sc-gswNZR cEnbaZ"
+          >
+            <a
+              className="zoom"
+              href="https://open.spotify.com/track/73YKzoGek0HvtkQu0zSA1e"
+              id="spotify"
+            >
+              avoidant_spotify
+            </a>
+            <a
+              className="zoom"
+              href="https://www.youtube.com/watch?v=rta17yBhzC0"
+              id="youtube"
+            >
+              avoidant_youtube
+            </a>
+            <a
+              className="zoom"
+              href="https://music.apple.com/fi/song/avoidant/1806717561"
+              id="apple_music"
+            >
+              avoidant_apple
+            </a>
+            <a
+              className="zoom"
+              href="https://www.amazon.com/music/player/albums/B0F3PQG9HN"
+              id="amazon_music"
+            >
+              avoidant_amazon
+            </a>
+          </div>
+        </div>
+        <div
+          className="sc-eDvSVe fBBjVj"
+        >
+          Listen to "Searching"
         </div>
         <div>
           <img

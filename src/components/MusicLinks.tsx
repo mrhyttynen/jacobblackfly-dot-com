@@ -26,3 +26,16 @@ export const SearchingLinks: React.FC = () => {
     </DivWithWhiteBackgroundAndBlackBordersThick>
   );
 };
+
+export const AvoidantLinks: React.FC = () => {
+  return (
+    <DivWithWhiteBackgroundAndBlackBordersThick>
+      <HorizontalFlexBox>
+        <a id="spotify" className="zoom" href="https://open.spotify.com/track/73YKzoGek0HvtkQu0zSA1e">avoidant_spotify</a>
+        <a id="youtube" className="zoom" href="https://www.youtube.com/watch?v=rta17yBhzC0">avoidant_youtube</a>
+        <a id="apple_music" className="zoom" href="https://music.apple.com/fi/song/avoidant/1806717561">avoidant_apple</a>
+        <a id="amazon_music" className="zoom" href="https://www.amazon.com/music/player/albums/B0F3PQG9HN">avoidant_amazon</a>
+      </HorizontalFlexBox>
+    </DivWithWhiteBackgroundAndBlackBordersThick>
+  );
+};
