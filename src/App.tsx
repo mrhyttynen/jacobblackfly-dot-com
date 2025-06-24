@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import SocialMediaLinks from './components/SocialMediaLinks';
-import { DivWithWhiteBackgroundAndBlackBordersThin, H1WithWhiteBackgroundAndBlackBorders, VerticalFlexBox } from './styles/styles';
+import { DivWithWhiteBackgroundAndBlackBordersThin, VerticalFlexBox } from './styles/styles';
 import { SelectedPage, PageMenu, SelectablePage } from './components/PageSelection';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <body>
         <VerticalFlexBox>
-          <H1WithWhiteBackgroundAndBlackBorders>JACOBBLACKFLY.COM</H1WithWhiteBackgroundAndBlackBorders>
+          <a id="jacobblackfly" href="https://www.jacobblackfly.com">jacob blackfly</a>
           <PageMenu 
             onShowBio={()=>setSelectedPage("ABOUT")} 
             onShowHome={()=>setSelectedPage("HOME")}

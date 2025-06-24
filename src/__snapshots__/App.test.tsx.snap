@@ -8,11 +8,12 @@ exports[`App renders app that matches snapshot 1`] = `
     <div
       className="sc-bcXHqe gkJjOJ"
     >
-      <h1
-        className="sc-jSUZER eigUHz"
+      <a
+        href="https://www.jacobblackfly.com"
+        id="jacobblackfly"
       >
-        JACOBBLACKFLY.COM
-      </h1>
+        jacob blackfly
+      </a>
       <div
         className="sc-gswNZR cEnbaZ"
       >
@@ -41,12 +42,12 @@ exports[`App renders app that matches snapshot 1`] = `
         <div
           className="sc-eDvSVe fBBjVj"
         >
-          Listen to "Avoidant"
+          Listen to my EP "Searching"
         </div>
         <div>
           <img
-            alt="Magnet and man"
-            src="avoidant-coverphoto.jpeg"
+            alt="Man looking into the camera on a pier"
+            src="searching-ep-coverphoto.jpeg"
             width="300"
           />
         </div>
@@ -58,127 +59,31 @@ exports[`App renders app that matches snapshot 1`] = `
           >
             <a
               className="zoom"
-              href="https://open.spotify.com/track/73YKzoGek0HvtkQu0zSA1e"
+              href="https://open.spotify.com/album/54cMaJgpXMyU6zY72I9PYP"
               id="spotify"
             >
-              avoidant_spotify
+              ep_spotify
             </a>
             <a
               className="zoom"
-              href="https://www.youtube.com/watch?v=rta17yBhzC0"
+              href="https://youtube.com/playlist?list=OLAK5uy_mM89XmzCk4Wh1qW5YGY4-fC_NoBoq0q3M"
               id="youtube"
             >
-              avoidant_youtube
+              ep_youtube
             </a>
             <a
               className="zoom"
-              href="https://music.apple.com/fi/song/avoidant/1806717561"
+              href="https://music.apple.com/us/album/searching-ep/1822209020"
               id="apple_music"
             >
-              avoidant_apple
+              ep_apple
             </a>
             <a
               className="zoom"
-              href="https://www.amazon.com/music/player/albums/B0F3PQG9HN"
+              href="https://amazon.co.uk/music/player/albums/B0FF56SNZ6"
               id="amazon_music"
             >
-              avoidant_amazon
-            </a>
-          </div>
-        </div>
-        <div
-          className="sc-eDvSVe fBBjVj"
-        >
-          Listen to "Searching"
-        </div>
-        <div>
-          <img
-            alt="Man playing piano over a blue background"
-            src="searching-coverphoto.jpeg"
-            width="300"
-          />
-        </div>
-        <div
-          className="sc-hLBbgP dgmzqa"
-        >
-          <div
-            className="sc-gswNZR cEnbaZ"
-          >
-            <a
-              className="zoom"
-              href="https://open.spotify.com/album/2hqZceh2GVkHgqy5mt2Rbg"
-              id="spotify"
-            >
-              searching_spotify
-            </a>
-            <a
-              className="zoom"
-              href="https://youtu.be/drN7_hmVLh4"
-              id="youtube"
-            >
-              searching_youtube
-            </a>
-            <a
-              className="zoom"
-              href="https://music.apple.com/us/album/searching/1794303799"
-              id="apple_music"
-            >
-              searching_apple
-            </a>
-            <a
-              className="zoom"
-              href="https://www.amazon.com/music/player/tracks/B0DVQ54M2L"
-              id="amazon_music"
-            >
-              searching_amazon
-            </a>
-          </div>
-        </div>
-        <div
-          className="sc-eDvSVe fBBjVj"
-        >
-          Listen to "180 Degrees (Carrot Cake Song)"
-        </div>
-        <div>
-          <img
-            alt="An oven overlaid with text: '180 Degrees'"
-            src="carrotcake-coverphoto.jpeg"
-            width="300"
-          />
-        </div>
-        <div
-          className="sc-hLBbgP dgmzqa"
-        >
-          <div
-            className="sc-gswNZR cEnbaZ"
-          >
-            <a
-              className="zoom"
-              href="https://open.spotify.com/track/0zbRd7eFUagrxQfX0BSN5p?si=VJw55mIESuCkVnjaNztklA"
-              id="spotify"
-            >
-              carrotcake_spotify
-            </a>
-            <a
-              className="zoom"
-              href="https://youtu.be/BMzRTILK1Aw"
-              id="youtube"
-            >
-              carrotcake_youtube
-            </a>
-            <a
-              className="zoom"
-              href="https://music.apple.com/gb/album/180-degrees-carrot-cake-song/1695665758?i=1695665759"
-              id="apple_music"
-            >
-              carrotcake_apple
-            </a>
-            <a
-              className="zoom"
-              href="https://music.amazon.co.uk/albums/B0CB2JNF88?marketplaceId=A1F83G8C2ARO7P&musicTerritory=GB&ref=dm_sh_2RkvvEIzWAsR5dySabqS0yCFd&trackAsin=B0CB2SF4C2"
-              id="amazon_music"
-            >
-              carrotcake_amazon
+              ep_amazon
             </a>
           </div>
         </div>

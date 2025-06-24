@@ -1,40 +1,14 @@
 import React from 'react';
 import { DivWithWhiteBackgroundAndBlackBordersThick, HorizontalFlexBox } from '../styles/styles';
 
-export const CarrotCakeLinks: React.FC = () => {
+export const SearchingEpLinks: React.FC = () => {
   return (
     <DivWithWhiteBackgroundAndBlackBordersThick>
       <HorizontalFlexBox>
-        <a id="spotify" className="zoom" href="https://open.spotify.com/track/0zbRd7eFUagrxQfX0BSN5p?si=VJw55mIESuCkVnjaNztklA">carrotcake_spotify</a>
-        <a id="youtube" className="zoom" href="https://youtu.be/BMzRTILK1Aw">carrotcake_youtube</a>
-        <a id="apple_music" className="zoom" href="https://music.apple.com/gb/album/180-degrees-carrot-cake-song/1695665758?i=1695665759">carrotcake_apple</a>
-        <a id="amazon_music" className="zoom" href="https://music.amazon.co.uk/albums/B0CB2JNF88?marketplaceId=A1F83G8C2ARO7P&musicTerritory=GB&ref=dm_sh_2RkvvEIzWAsR5dySabqS0yCFd&trackAsin=B0CB2SF4C2">carrotcake_amazon</a>
-      </HorizontalFlexBox>
-    </DivWithWhiteBackgroundAndBlackBordersThick>
-  );
-};
-
-export const SearchingLinks: React.FC = () => {
-  return (
-    <DivWithWhiteBackgroundAndBlackBordersThick>
-      <HorizontalFlexBox>
-        <a id="spotify" className="zoom" href="https://open.spotify.com/album/2hqZceh2GVkHgqy5mt2Rbg">searching_spotify</a>
-        <a id="youtube" className="zoom" href="https://youtu.be/drN7_hmVLh4">searching_youtube</a>
-        <a id="apple_music" className="zoom" href="https://music.apple.com/us/album/searching/1794303799">searching_apple</a>
-        <a id="amazon_music" className="zoom" href="https://www.amazon.com/music/player/tracks/B0DVQ54M2L">searching_amazon</a>
-      </HorizontalFlexBox>
-    </DivWithWhiteBackgroundAndBlackBordersThick>
-  );
-};
-
-export const AvoidantLinks: React.FC = () => {
-  return (
-    <DivWithWhiteBackgroundAndBlackBordersThick>
-      <HorizontalFlexBox>
-        <a id="spotify" className="zoom" href="https://open.spotify.com/track/73YKzoGek0HvtkQu0zSA1e">avoidant_spotify</a>
-        <a id="youtube" className="zoom" href="https://www.youtube.com/watch?v=rta17yBhzC0">avoidant_youtube</a>
-        <a id="apple_music" className="zoom" href="https://music.apple.com/fi/song/avoidant/1806717561">avoidant_apple</a>
-        <a id="amazon_music" className="zoom" href="https://www.amazon.com/music/player/albums/B0F3PQG9HN">avoidant_amazon</a>
+        <a id="spotify" className="zoom" href="https://open.spotify.com/album/54cMaJgpXMyU6zY72I9PYP">ep_spotify</a>
+        <a id="youtube" className="zoom" href="https://youtube.com/playlist?list=OLAK5uy_mM89XmzCk4Wh1qW5YGY4-fC_NoBoq0q3M">ep_youtube</a>
+        <a id="apple_music" className="zoom" href="https://music.apple.com/us/album/searching-ep/1822209020">ep_apple</a>
+        <a id="amazon_music" className="zoom" href="https://amazon.co.uk/music/player/albums/B0FF56SNZ6">ep_amazon</a>
       </HorizontalFlexBox>
     </DivWithWhiteBackgroundAndBlackBordersThick>
   );

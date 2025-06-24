@@ -42,11 +42,8 @@ export const DivWithWhiteBackgroundAndBlackBordersThin = styled.div`
 `;
 
 // responsive fontsize (vw = viewport width) on mobile devices only
-export const H1WithWhiteBackgroundAndBlackBorders = styled.h1`
+export const H1Responsive = styled.h1`
 font-size: 2rem;  
-border: 6px solid;
-border-color: black;
-background-color: white;
 
 @media only screen and (max-width: 600px) {
   {
