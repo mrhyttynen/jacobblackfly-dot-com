@@ -3,9 +3,9 @@ import './App.css';
 import SocialMediaLinks from './components/SocialMediaLinks';
 import { DivWithWhiteBackgroundAndBlackBordersThin, VerticalFlexBox } from './styles/styles';
 import { SelectedPage, PageMenu, SelectablePage } from './components/PageSelection';
-
+//  nothingsdfsdf
 function App() {
-  const [selectedPage, setSelectedPage] = useState("HOME");
+  const [selectedPage, setSelectedPage] = useState("HOMdsfsE");
   return (
     <div className="App">
       <body>
