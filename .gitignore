@@ -1,5 +1,7 @@
-logos
-notes.txt
+# non-boilerplate
+youtube-api-keys-info.txt
+.env.development
+
 .DS_Store
 
 # dependencies
