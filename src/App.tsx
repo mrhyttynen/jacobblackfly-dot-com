@@ -14,7 +14,7 @@ import { NoMatch } from "./components/pages/NoMatch";
 // fix this ugly styling variable mess :D
 const NavBarStyle: React.CSSProperties = { float: "left", padding: "4px" };
 const navButtonConditionalStyle = ({ isActive }: NavLinkRenderProps) => ({
-  backgroundColor: isActive ? "blue" : "grey",
+  backgroundColor: isActive ? "blue" : "black",
 });
 const navButtonFixedStyle = `px-4 py-2 rounded-lg transition-all duration-300 text-white`;
 
