@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoMatchPage renders page that matches snapshot 1`] = `
+<p>
+  There's nothing here: 404!
+</p>
+`;

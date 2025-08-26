@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage renders page that matches snapshot 1`] = `
+<div
+  className="sc-bcXHqe gkJjOJ"
+>
+  <div
+    className="sc-eDvSVe WyGuv"
+  >
+    Listen to my EP "Searching"
+  </div>
+  <div>
+    <img
+      alt="Man looking into the camera on a pier"
+      src="searching-ep-coverphoto.jpeg"
+      width="300"
+    />
+  </div>
+  <div
+    className="sc-hLBbgP kbgQYO"
+  >
+    <div
+      className="sc-gswNZR cEnbaZ"
+    >
+      <a
+        className="zoom"
+        href="https://open.spotify.com/album/54cMaJgpXMyU6zY72I9PYP"
+        id="spotify"
+      >
+        ep_spotify
+      </a>
+      <a
+        className="zoom"
+        href="https://youtube.com/playlist?list=OLAK5uy_mM89XmzCk4Wh1qW5YGY4-fC_NoBoq0q3M"
+        id="youtube"
+      >
+        ep_youtube
+      </a>
+      <a
+        className="zoom"
+        href="https://music.apple.com/us/album/searching-ep/1822209020"
+        id="apple_music"
+      >
+        ep_apple
+      </a>
+      <a
+        className="zoom"
+        href="https://amazon.co.uk/music/player/albums/B0FF56SNZ6"
+        id="amazon_music"
+      >
+        ep_amazon
+      </a>
+    </div>
+  </div>
+</div>
+`;

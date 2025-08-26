@@ -9,7 +9,7 @@ import { NavLink, NavLinkRenderProps, Routes, Route } from "react-router";
 import { AboutPage } from "./components/pages/AboutPage";
 import { HomePage } from "./components/pages/HomePage";
 import { VideoPage } from "./components/pages/VideoPage";
-import { NoMatch } from "./components/pages/NoMatch";
+import { NoMatchPage } from "./components/pages/NoMatchPage";
 
 // fix this ugly styling variable mess :D
 const NavBarStyle: React.CSSProperties = { float: "left", padding: "4px" };
@@ -62,7 +62,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/videos" element={<VideoPage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="*" element={<NoMatch />} />
+            <Route path="*" element={<NoMatchPage />} />
           </Routes>
           <DivWithWhiteBackgroundAndBlackBordersThin>
             Follow me
