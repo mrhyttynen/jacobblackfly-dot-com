@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoPage renders page that matches snapshot 1`] = `
+<div
+  className="sc-bcXHqe gkJjOJ"
+>
+  <h1>
+    Subscribers:
+     
+    <b
+      style={
+        Object {
+          "textDecoration": "underline",
+          "textDecorationThickness": "2px",
+        }
+      }
+    />
+     
+    - can we get to 100?
+  </h1>
+  <h1>
+    Total views:
+     
+    <b
+      style={
+        Object {
+          "textDecoration": "underline",
+          "textDecorationThickness": "2px",
+        }
+      }
+    />
+  </h1>
+  <p>
+    Refresh page to update
+  </p>
+  <iframe
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen={true}
+    className="w-[90vw] max-w-[1000px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px]"
+    referrerPolicy="strict-origin-when-cross-origin"
+    src="https://www.youtube.com/embed/drN7_hmVLh4?si=T66AoBorZzRFHMCS"
+    title="YouTube video player"
+  />
+  <iframe
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen={true}
+    className="w-[90vw] max-w-[1000px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px]"
+    referrerPolicy="strict-origin-when-cross-origin"
+    src="https://www.youtube.com/embed/BMzRTILK1Aw?si=26gjodRhqgoIoy_u"
+    title="YouTube video player"
+  />
+</div>
+`;

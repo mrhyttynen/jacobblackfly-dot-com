@@ -1,7 +1,5 @@
-
-
 .zoom {
-  transition: transform .4s;
+  transition: transform 0.4s;
 }
 
 .zoom:hover {
@@ -14,12 +12,12 @@
 
 h2 span {
   background-color: rgb(255, 255, 255);
-  border-radius: 3px
+  border-radius: 3px;
 }
 
 body {
   background: linear-gradient(#96cdf9, #00095b);
-  font-family: 'Signika Negative', monospace;
+  font-family: "Signika Negative", monospace;
   background-attachment: fixed;
 }
 
