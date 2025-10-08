@@ -1,17 +1,6 @@
+# created outside terraform
 data "aws_route53_zone" "root_zone" {
-  name = var.root_domain_name
-}
-
-
-resource "aws_route53_record" "root_cloudfront_record" {
-  zone_id = data.aws_route53_zone.root_zone.zone_id
-  name    = var.root_domain_name
-  type    = "A"
-  alias {
-    evaluate_target_health = false
-    name                   = aws_cloudfront_distribution.website_distribution.domain_name
-    zone_id                = aws_cloudfront_distribution.website_distribution.hosted_zone_id
-  }
+  name = "jacobblackfly.com"
 }
 
 resource "aws_route53_record" "acm_val_records" {
@@ -31,15 +20,8 @@ resource "aws_route53_record" "acm_val_records" {
   zone_id         = data.aws_route53_zone.root_zone.zone_id
 }
 
+# import resource "aws_route53_record" "root_cloudfront_record"
 
-resource "aws_route53_record" "sub_cloudfront_record" {
-  zone_id = data.aws_route53_zone.root_zone.zone_id
-  name    = "www.${var.root_domain_name}"
-  type    = "A"
-  alias {
-    evaluate_target_health = false
-    name                   = aws_cloudfront_distribution.website_distribution.domain_name
-    zone_id                = aws_cloudfront_distribution.website_distribution.hosted_zone_id
-  }
-}
+# import resource "aws_route53_record" "sub_cloudfront_record"
 
+  # both depends on aws_cloudfront_distribution.website_distribution

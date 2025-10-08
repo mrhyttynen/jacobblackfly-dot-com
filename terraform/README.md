@@ -1,1 +1,0 @@
-https://github.com/cullancarey/terraform-aws-static-s3-website-template#
