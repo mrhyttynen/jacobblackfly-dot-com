@@ -20,8 +20,41 @@ resource "aws_route53_record" "acm_val_records" {
   zone_id         = data.aws_route53_zone.root_zone.zone_id
 }
 
-# import resource "aws_route53_record" "root_cloudfront_record"
+resource "aws_route53_record" "www_cloudfront_record" {
+  allow_overwrite                  = null
+  health_check_id                  = null
+  name                             = "www.jacobblackfly.com"
+  type                             = "A"
+  zone_id                          = data.aws_route53_zone.root_zone.zone_id
+  alias {
+    evaluate_target_health = false
+    name                   = aws_cloudfront_distribution.www_distribution.domain_name
+    zone_id                = aws_cloudfront_distribution.www_distribution.hosted_zone_id
+  }
+}
 
-# import resource "aws_route53_record" "sub_cloudfront_record"
+resource "aws_route53_record" "dev_cloudfront_record" {
+  allow_overwrite                  = null
+  health_check_id                  = null
+  name                             = "dev.jacobblackfly.com"
+  type                             = "A"
+  zone_id                          = data.aws_route53_zone.root_zone.zone_id
+  alias {
+    evaluate_target_health = false
+    name                   = aws_cloudfront_distribution.dev_distribution.domain_name
+    zone_id                = aws_cloudfront_distribution.dev_distribution.hosted_zone_id
+  }
+}
 
-  # both depends on aws_cloudfront_distribution.website_distribution
+resource "aws_route53_record" "root_cloudfront_record" {
+  allow_overwrite                  = null
+  health_check_id                  = null
+  name                             = "jacobblackfly.com"
+  type                             = "A"
+  zone_id                          = data.aws_route53_zone.root_zone.zone_id
+  alias {
+    evaluate_target_health = false
+    name                   = aws_cloudfront_distribution.root_distribution.domain_name
+    zone_id                = aws_cloudfront_distribution.root_distribution.hosted_zone_id
+  }
+}
