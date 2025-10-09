@@ -1,6 +1,5 @@
 resource "aws_s3_bucket" "www_website_bucket" {
   bucket              = "www.${var.root_domain_name}"
-  bucket_prefix       = null
   force_destroy       = false
   object_lock_enabled = false
   region              = var.website_bucket_region
@@ -8,7 +7,6 @@ resource "aws_s3_bucket" "www_website_bucket" {
 
 resource "aws_s3_bucket" "root_website_bucket" {
   bucket              = var.root_domain_name
-  bucket_prefix       = null
   force_destroy       = false
   object_lock_enabled = false
   region              = var.website_bucket_region
@@ -16,7 +14,6 @@ resource "aws_s3_bucket" "root_website_bucket" {
 
 resource "aws_s3_bucket" "dev_website_bucket" {
   bucket              = "dev.${var.root_domain_name}"
-  bucket_prefix       = null
   force_destroy       = false
   object_lock_enabled = false
   region              = var.website_bucket_region
@@ -24,9 +21,7 @@ resource "aws_s3_bucket" "dev_website_bucket" {
 
 resource "aws_s3_bucket_website_configuration" "root_website_bucket_config" {
   bucket                = var.root_domain_name
-  expected_bucket_owner = null
   region                = var.website_bucket_region
-  routing_rules         = null
   redirect_all_requests_to {
     host_name = "www.${var.root_domain_name}"
     protocol  = "https"

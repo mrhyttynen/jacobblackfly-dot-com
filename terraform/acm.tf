@@ -1,9 +1,5 @@
 resource "aws_acm_certificate" "jacobblackflycert" {
-  certificate_authority_arn = null
-  certificate_body          = null
-  certificate_chain         = null
   domain_name               = var.root_domain_name
-  early_renewal_duration    = null
   key_algorithm             = "RSA_2048"
   private_key               = null # sensitive
   region                    = "us-east-1"
