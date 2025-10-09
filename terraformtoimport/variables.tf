@@ -3,12 +3,12 @@ variable "root_domain_name" {
   description = "The domain name of your website."
 }
 
-variable "website-bucket-region" {
+variable "website_bucket_region" {
   type        = string
   description = "The primary region where your website will be hosted."
 }
 
-# variable "backup-website-bucket-region" {
+# variable "backup-website_bucket_region" {
 #   type        = string
 #   description = "The region where your backup bucket will be located."
 # }

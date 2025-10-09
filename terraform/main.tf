@@ -1,6 +1,6 @@
 # # based on this https://github.com/cullancarey/terraform-aws-static-s3-website-template
 provider "aws" {
-  region = var.website-bucket-region
+  region = var.website_bucket_region
   default_tags {
     tags = var.default_tags
   }
@@ -8,7 +8,7 @@ provider "aws" {
 
 # provider "aws" {
 #   alias  = "backup-website-region"
-#   region = var.backup-website-bucket-region
+#   region = var.backup-website_bucket_region
 #   default_tags {
 #     tags = var.default_tags
 #   }

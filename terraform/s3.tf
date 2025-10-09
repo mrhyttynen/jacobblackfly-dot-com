@@ -3,7 +3,7 @@ resource "aws_s3_bucket" "www_website_bucket" {
   bucket_prefix       = null
   force_destroy       = false
   object_lock_enabled = false
-  region              = "eu-west-2"
+  region              = var.website_bucket_region
   tags                = {}
   tags_all            = {}
 }
@@ -13,7 +13,7 @@ resource "aws_s3_bucket" "root_website_bucket" {
   bucket_prefix       = null
   force_destroy       = false
   object_lock_enabled = false
-  region              = "eu-west-2"
+  region              = var.website_bucket_region
   tags                = {}
   tags_all            = {}
 }
@@ -23,7 +23,7 @@ resource "aws_s3_bucket" "dev_website_bucket" {
   bucket_prefix       = null
   force_destroy       = false
   object_lock_enabled = false
-  region              = "eu-west-2"
+  region              = var.website_bucket_region
   tags                = {}
   tags_all            = {}
 }
@@ -36,7 +36,7 @@ resource "aws_s3_bucket" "dev_website_bucket" {
 resource "aws_s3_bucket_website_configuration" "root_website_bucket_config" {
   bucket                = "jacobblackfly.com"
   expected_bucket_owner = null
-  region                = "eu-west-2"
+  region                = var.website_bucket_region
   routing_rules         = null
   redirect_all_requests_to {
     host_name = "www.jacobblackfly.com"
