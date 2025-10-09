@@ -4,8 +4,6 @@ resource "aws_s3_bucket" "www_website_bucket" {
   force_destroy       = false
   object_lock_enabled = false
   region              = var.website_bucket_region
-  tags                = {}
-  tags_all            = {}
 }
 
 resource "aws_s3_bucket" "root_website_bucket" {
@@ -14,8 +12,6 @@ resource "aws_s3_bucket" "root_website_bucket" {
   force_destroy       = false
   object_lock_enabled = false
   region              = var.website_bucket_region
-  tags                = {}
-  tags_all            = {}
 }
 
 resource "aws_s3_bucket" "dev_website_bucket" {
@@ -24,8 +20,6 @@ resource "aws_s3_bucket" "dev_website_bucket" {
   force_destroy       = false
   object_lock_enabled = false
   region              = var.website_bucket_region
-  tags                = {}
-  tags_all            = {}
 }
 
 resource "aws_s3_bucket_website_configuration" "root_website_bucket_config" {

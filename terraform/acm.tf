@@ -8,8 +8,6 @@ resource "aws_acm_certificate" "jacobblackflycert" {
   private_key               = null # sensitive
   region                    = "us-east-1"
   subject_alternative_names = ["*.${var.root_domain_name}", var.root_domain_name]
-  tags                      = {}
-  tags_all                  = {}
   validation_method         = "DNS"
   options {
     certificate_transparency_logging_preference = "ENABLED"
