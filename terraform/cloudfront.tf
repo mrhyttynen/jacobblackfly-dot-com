@@ -64,7 +64,7 @@ resource "aws_cloudfront_distribution" "www_distribution" {
     }
   }
   viewer_certificate {
-    acm_certificate_arn            = "arn:aws:acm:us-east-1:304315860042:certificate/eff1ec19-f3e8-40bf-9c6d-c1e1599b6c01"
+    acm_certificate_arn            = aws_acm_certificate.jacobblackflycert.arn
     cloudfront_default_certificate = false
     minimum_protocol_version       = "TLSv1.2_2021"
     ssl_support_method             = "sni-only"
@@ -132,7 +132,7 @@ resource "aws_cloudfront_distribution" "root_distribution" {
     }
   }
   viewer_certificate {
-    acm_certificate_arn            = "arn:aws:acm:us-east-1:304315860042:certificate/eff1ec19-f3e8-40bf-9c6d-c1e1599b6c01"
+    acm_certificate_arn            = aws_acm_certificate.jacobblackflycert.arn
     cloudfront_default_certificate = false
     minimum_protocol_version       = "TLSv1.2_2021"
     ssl_support_method             = "sni-only"
@@ -190,7 +190,7 @@ resource "aws_cloudfront_distribution" "dev_distribution" {
     }
   }
   viewer_certificate {
-    acm_certificate_arn            = "arn:aws:acm:us-east-1:304315860042:certificate/eff1ec19-f3e8-40bf-9c6d-c1e1599b6c01"
+    acm_certificate_arn            = aws_acm_certificate.jacobblackflycert.arn
     cloudfront_default_certificate = false
     minimum_protocol_version       = "TLSv1.2_2021"
     ssl_support_method             = "sni-only"
