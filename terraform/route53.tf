@@ -1,4 +1,4 @@
-# created outside terraform
+# Hosted zone is managed outside terraform
 data "aws_route53_zone" "root_zone" {
   name = var.root_domain_name
 }

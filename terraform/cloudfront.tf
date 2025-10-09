@@ -7,12 +7,6 @@
 #   signing_protocol                  = "sigv4"
 # }
 
-# example import block
-# import {
-#   to = aws_cloudfront_distribution.dev_distribution
-#   id = "E2F132K7YOLD70"
-# }
-
 resource "aws_cloudfront_distribution" "www_distribution" {
   aliases                         = ["www.${var.root_domain_name}"]
   anycast_ip_list_id              = null

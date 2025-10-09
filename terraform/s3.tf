@@ -28,11 +28,6 @@ resource "aws_s3_bucket" "dev_website_bucket" {
   tags_all            = {}
 }
 
-# import {
-#   to = aws_s3_bucket_website_configuration.root_website_bucket_config
-#   id = "jacobblackfly.com"
-# }
-
 resource "aws_s3_bucket_website_configuration" "root_website_bucket_config" {
   bucket                = var.root_domain_name
   expected_bucket_owner = null

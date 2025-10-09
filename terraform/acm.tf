@@ -1,9 +1,3 @@
-# example import
-# import {
-#   to = aws_acm_certificate.jacobblackflycert
-#   id = "arn:aws:acm:us-east-1:304315860042:certificate/eff1ec19-f3e8-40bf-9c6d-c1e1599b6c01"
-# }
-
 resource "aws_acm_certificate" "jacobblackflycert" {
   certificate_authority_arn = null
   certificate_body          = null
