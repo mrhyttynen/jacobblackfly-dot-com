@@ -1,6 +1,6 @@
 # created outside terraform
 data "aws_route53_zone" "root_zone" {
-  name = "jacobblackfly.com"
+  name = var.root_domain_name
 }
 
 resource "aws_route53_record" "acm_val_records" {
@@ -23,7 +23,7 @@ resource "aws_route53_record" "acm_val_records" {
 resource "aws_route53_record" "www_cloudfront_record" {
   allow_overwrite                  = null
   health_check_id                  = null
-  name                             = "www.jacobblackfly.com"
+  name                             = "www.${var.root_domain_name}"
   type                             = "A"
   zone_id                          = data.aws_route53_zone.root_zone.zone_id
   alias {
@@ -36,7 +36,7 @@ resource "aws_route53_record" "www_cloudfront_record" {
 resource "aws_route53_record" "dev_cloudfront_record" {
   allow_overwrite                  = null
   health_check_id                  = null
-  name                             = "dev.jacobblackfly.com"
+  name                             = "dev.${var.root_domain_name}"
   type                             = "A"
   zone_id                          = data.aws_route53_zone.root_zone.zone_id
   alias {
@@ -49,7 +49,7 @@ resource "aws_route53_record" "dev_cloudfront_record" {
 resource "aws_route53_record" "root_cloudfront_record" {
   allow_overwrite                  = null
   health_check_id                  = null
-  name                             = "jacobblackfly.com"
+  name                             = var.root_domain_name
   type                             = "A"
   zone_id                          = data.aws_route53_zone.root_zone.zone_id
   alias {

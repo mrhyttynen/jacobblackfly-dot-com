@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "www_website_bucket" {
-  bucket              = "www.jacobblackfly.com"
+  bucket              = "www.${var.root_domain_name}"
   bucket_prefix       = null
   force_destroy       = false
   object_lock_enabled = false
@@ -9,7 +9,7 @@ resource "aws_s3_bucket" "www_website_bucket" {
 }
 
 resource "aws_s3_bucket" "root_website_bucket" {
-  bucket              = "jacobblackfly.com"
+  bucket              = var.root_domain_name
   bucket_prefix       = null
   force_destroy       = false
   object_lock_enabled = false
@@ -19,7 +19,7 @@ resource "aws_s3_bucket" "root_website_bucket" {
 }
 
 resource "aws_s3_bucket" "dev_website_bucket" {
-  bucket              = "dev.jacobblackfly.com"
+  bucket              = "dev.${var.root_domain_name}"
   bucket_prefix       = null
   force_destroy       = false
   object_lock_enabled = false
@@ -34,12 +34,12 @@ resource "aws_s3_bucket" "dev_website_bucket" {
 # }
 
 resource "aws_s3_bucket_website_configuration" "root_website_bucket_config" {
-  bucket                = "jacobblackfly.com"
+  bucket                = var.root_domain_name
   expected_bucket_owner = null
   region                = var.website_bucket_region
   routing_rules         = null
   redirect_all_requests_to {
-    host_name = "www.jacobblackfly.com"
+    host_name = "www.${var.root_domain_name}"
     protocol  = "https"
   }
 }
@@ -67,7 +67,7 @@ resource "aws_s3_bucket_policy" "www_website_bucket_policy" {
               "AWS": "arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity E6DNWGHFRLSXT"
           },
           "Action": "s3:GetObject",
-          "Resource": "arn:aws:s3:::www.jacobblackfly.com/*",
+          "Resource": "arn:aws:s3:::www.${var.root_domain_name}/*",
           "Condition": {
               "StringEquals": {
                   "AWS:SourceArn": "${aws_cloudfront_distribution.www_distribution.arn}"
@@ -93,7 +93,7 @@ resource "aws_s3_bucket_policy" "dev_website_bucket_policy" {
                 "AWS": "arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity E6DNWGHFRLSXT"
             },
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::dev.jacobblackfly.com/*",
+            "Resource": "arn:aws:s3:::dev.${var.root_domain_name}/*",
             "Condition": {
                 "StringEquals": {
                     "AWS:SourceArn": "${aws_cloudfront_distribution.dev_distribution.arn}"

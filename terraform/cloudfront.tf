@@ -14,9 +14,9 @@
 # }
 
 resource "aws_cloudfront_distribution" "www_distribution" {
-  aliases                         = ["www.jacobblackfly.com"]
+  aliases                         = ["www.${var.root_domain_name}"]
   anycast_ip_list_id              = null
-  comment                         = "www.jacobblackfly.com SUBDOMAIN distribution"
+  comment                         = "www.${var.root_domain_name} SUBDOMAIN distribution"
   continuous_deployment_policy_id = null
   default_root_object             = "index.html"
   enabled                         = true
@@ -26,10 +26,10 @@ resource "aws_cloudfront_distribution" "www_distribution" {
   retain_on_delete                = false
   staging                         = false
   tags = {
-    Name = "www.jacobblackfly.com"
+    Name = "www.${var.root_domain_name}"
   }
   tags_all = {
-    Name = "www.jacobblackfly.com"
+    Name = "www.${var.root_domain_name}"
   }
   wait_for_deployment = true
   web_acl_id          = null
@@ -52,7 +52,7 @@ resource "aws_cloudfront_distribution" "www_distribution" {
     realtime_log_config_arn    = null
     response_headers_policy_id = null
     smooth_streaming           = false
-    target_origin_id           = "www.jacobblackfly.com.s3.eu-west-2.amazonaws.com"
+    target_origin_id           = "www.${var.root_domain_name}.s3.eu-west-2.amazonaws.com"
     trusted_key_groups         = []
     trusted_signers            = []
     viewer_protocol_policy     = "redirect-to-https"
@@ -63,9 +63,9 @@ resource "aws_cloudfront_distribution" "www_distribution" {
   origin {
     connection_attempts         = 3
     connection_timeout          = 10
-    domain_name                 = "www.jacobblackfly.com.s3.eu-west-2.amazonaws.com"
+    domain_name                 = "www.${var.root_domain_name}.s3.eu-west-2.amazonaws.com"
     origin_access_control_id    = null
-    origin_id                   = "www.jacobblackfly.com.s3.eu-west-2.amazonaws.com"
+    origin_id                   = "www.${var.root_domain_name}.s3.eu-west-2.amazonaws.com"
     origin_path                 = null
     response_completion_timeout = 0
     s3_origin_config {
@@ -88,9 +88,9 @@ resource "aws_cloudfront_distribution" "www_distribution" {
 }
 
 resource "aws_cloudfront_distribution" "root_distribution" {
-  aliases                         = ["jacobblackfly.com"]
+  aliases                         = [var.root_domain_name]
   anycast_ip_list_id              = null
-  comment                         = "jacobblackfly.com ROOT domain distribution"
+  comment                         = "${var.root_domain_name} ROOT domain distribution"
   continuous_deployment_policy_id = null
   default_root_object             = null
   enabled                         = true
@@ -100,10 +100,10 @@ resource "aws_cloudfront_distribution" "root_distribution" {
   retain_on_delete                = false
   staging                         = false
   tags = {
-    Name = "jacobblackfly.com"
+    Name = var.root_domain_name
   }
   tags_all = {
-    Name = "jacobblackfly.com"
+    Name = var.root_domain_name
   }
   wait_for_deployment = true
   web_acl_id          = null
@@ -126,7 +126,7 @@ resource "aws_cloudfront_distribution" "root_distribution" {
     realtime_log_config_arn    = null
     response_headers_policy_id = null
     smooth_streaming           = false
-    target_origin_id           = "jacobblackfly.com.s3-website.eu-west-2.amazonaws.com"
+    target_origin_id           = "${var.root_domain_name}.s3-website.eu-west-2.amazonaws.com"
     trusted_key_groups         = []
     trusted_signers            = []
     viewer_protocol_policy     = "allow-all"
@@ -137,9 +137,9 @@ resource "aws_cloudfront_distribution" "root_distribution" {
   origin {
     connection_attempts         = 3
     connection_timeout          = 10
-    domain_name                 = "jacobblackfly.com.s3-website.eu-west-2.amazonaws.com"
+    domain_name                 = "${var.root_domain_name}.s3-website.eu-west-2.amazonaws.com"
     origin_access_control_id    = null
-    origin_id                   = "jacobblackfly.com.s3-website.eu-west-2.amazonaws.com"
+    origin_id                   = "${var.root_domain_name}.s3-website.eu-west-2.amazonaws.com"
     origin_path                 = null
     response_completion_timeout = 0
     custom_origin_config {
@@ -168,9 +168,9 @@ resource "aws_cloudfront_distribution" "root_distribution" {
 }
 
 resource "aws_cloudfront_distribution" "dev_distribution" {
-  aliases                         = ["dev.jacobblackfly.com"]
+  aliases                         = ["dev.${var.root_domain_name}"]
   anycast_ip_list_id              = null
-  comment                         = "dev.jacobblackfly.com SUBDOMAIN distribution"
+  comment                         = "dev.${var.root_domain_name} SUBDOMAIN distribution"
   continuous_deployment_policy_id = null
   default_root_object             = "index.html"
   enabled                         = true
@@ -180,10 +180,10 @@ resource "aws_cloudfront_distribution" "dev_distribution" {
   retain_on_delete                = false
   staging                         = false
   tags = {
-    Name = "dev.jacobblackfly.com"
+    Name = "dev.${var.root_domain_name}"
   }
   tags_all = {
-    Name = "dev.jacobblackfly.com"
+    Name = "dev.${var.root_domain_name}"
   }
   wait_for_deployment = true
   web_acl_id          = null
@@ -200,7 +200,7 @@ resource "aws_cloudfront_distribution" "dev_distribution" {
     realtime_log_config_arn    = null
     response_headers_policy_id = null
     smooth_streaming           = false
-    target_origin_id           = "dev.jacobblackfly.com.s3.eu-west-2.amazonaws.com-mghsl7duz55"
+    target_origin_id           = "dev.${var.root_domain_name}.s3.eu-west-2.amazonaws.com-mghsl7duz55"
     trusted_key_groups         = []
     trusted_signers            = []
     viewer_protocol_policy     = "redirect-to-https"
@@ -211,9 +211,9 @@ resource "aws_cloudfront_distribution" "dev_distribution" {
   origin {
     connection_attempts         = 3
     connection_timeout          = 10
-    domain_name                 = "dev.jacobblackfly.com.s3.eu-west-2.amazonaws.com"
+    domain_name                 = "dev.${var.root_domain_name}.s3.eu-west-2.amazonaws.com"
     origin_access_control_id    = null
-    origin_id                   = "dev.jacobblackfly.com.s3.eu-west-2.amazonaws.com-mghsl7duz55"
+    origin_id                   = "dev.${var.root_domain_name}.s3.eu-west-2.amazonaws.com-mghsl7duz55"
     origin_path                 = null
     response_completion_timeout = 0
     s3_origin_config {
