@@ -1,6 +1,9 @@
 # non-boilerplate
 youtube-api-keys-info.txt
 .env.development
+/terraform/.terraform
+/terraform/terraform.tfstate
+/terraform/terraform.tfstate.backup
 
 .DS_Store
 
