@@ -10,7 +10,7 @@ provider "aws" {
 
 provider "aws" {
   alias  = "cloudfront-certificate"
-  region = "us-east-1"
+  region = var.acm_certificate_region
   default_tags {
     tags = var.default_tags
   }

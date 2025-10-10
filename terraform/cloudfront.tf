@@ -40,7 +40,7 @@ resource "aws_cloudfront_distribution" "www_distribution" {
     max_ttl                    = 0
     min_ttl                    = 0
     smooth_streaming           = false
-    target_origin_id           = "www.${var.root_domain_name}.s3.eu-west-2.amazonaws.com"
+    target_origin_id           = "www.${var.root_domain_name}.s3.${var.website_bucket_region}.amazonaws.com"
     trusted_key_groups         = []
     trusted_signers            = []
     viewer_protocol_policy     = "redirect-to-https"
@@ -51,8 +51,8 @@ resource "aws_cloudfront_distribution" "www_distribution" {
   origin {
     connection_attempts         = 3
     connection_timeout          = 10
-    domain_name                 = "www.${var.root_domain_name}.s3.eu-west-2.amazonaws.com"
-    origin_id                   = "www.${var.root_domain_name}.s3.eu-west-2.amazonaws.com"
+    domain_name                 = "www.${var.root_domain_name}.s3.${var.website_bucket_region}.amazonaws.com"
+    origin_id                   = "www.${var.root_domain_name}.s3.${var.website_bucket_region}.amazonaws.com"
     response_completion_timeout = 0
     s3_origin_config {
       origin_access_identity = "origin-access-identity/cloudfront/E6DNWGHFRLSXT"
@@ -105,7 +105,7 @@ resource "aws_cloudfront_distribution" "root_distribution" {
     min_ttl                    = 0
     smooth_streaming           = false
     # this bucket is configured as website bucket to redirect all requests to www address
-    target_origin_id           = "${var.root_domain_name}.s3-website.eu-west-2.amazonaws.com"
+    target_origin_id           = "${var.root_domain_name}.s3-website.${var.website_bucket_region}.amazonaws.com"
     trusted_key_groups         = []
     trusted_signers            = []
     viewer_protocol_policy     = "allow-all"
@@ -116,8 +116,8 @@ resource "aws_cloudfront_distribution" "root_distribution" {
   origin {
     connection_attempts         = 3
     connection_timeout          = 10
-    domain_name                 = "${var.root_domain_name}.s3-website.eu-west-2.amazonaws.com"
-    origin_id                   = "${var.root_domain_name}.s3-website.eu-west-2.amazonaws.com"
+    domain_name                 = "${var.root_domain_name}.s3-website.${var.website_bucket_region}.amazonaws.com"
+    origin_id                   = "${var.root_domain_name}.s3-website.${var.website_bucket_region}.amazonaws.com"
     response_completion_timeout = 0
     custom_origin_config {
       http_port                = 80
@@ -169,7 +169,7 @@ resource "aws_cloudfront_distribution" "dev_distribution" {
     max_ttl                    = 0
     min_ttl                    = 0
     smooth_streaming           = false
-    target_origin_id           = "dev.${var.root_domain_name}.s3.eu-west-2.amazonaws.com-mghsl7duz55"
+    target_origin_id           = "dev.${var.root_domain_name}.s3.${var.website_bucket_region}.amazonaws.com-mghsl7duz55"
     trusted_key_groups         = []
     trusted_signers            = []
     viewer_protocol_policy     = "redirect-to-https"
@@ -180,8 +180,8 @@ resource "aws_cloudfront_distribution" "dev_distribution" {
   origin {
     connection_attempts         = 3
     connection_timeout          = 10
-    domain_name                 = "dev.${var.root_domain_name}.s3.eu-west-2.amazonaws.com"
-    origin_id                   = "dev.${var.root_domain_name}.s3.eu-west-2.amazonaws.com-mghsl7duz55"
+    domain_name                 = "dev.${var.root_domain_name}.s3.${var.website_bucket_region}.amazonaws.com"
+    origin_id                   = "dev.${var.root_domain_name}.s3.${var.website_bucket_region}.amazonaws.com-mghsl7duz55"
     response_completion_timeout = 0
     s3_origin_config {
       origin_access_identity = "origin-access-identity/cloudfront/E6DNWGHFRLSXT"

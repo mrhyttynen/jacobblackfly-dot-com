@@ -2,7 +2,7 @@ resource "aws_acm_certificate" "jacobblackflycert" {
   domain_name               = var.root_domain_name
   key_algorithm             = "RSA_2048"
   private_key               = null # sensitive
-  region                    = "us-east-1"
+  region                    = var.acm_certificate_region
   subject_alternative_names = ["*.${var.root_domain_name}", var.root_domain_name]
   validation_method         = "DNS"
   options {
