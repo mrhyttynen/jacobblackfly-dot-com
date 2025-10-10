@@ -33,6 +33,7 @@ resource "aws_cloudfront_distribution" "www_distribution" {
   # DISABLE CACHING PERMANENTLY ON DEV TO SEE CHANGES IMMEDIATELY
   default_cache_behavior {
     allowed_methods            = ["GET", "HEAD"]
+    # CachingOptimized
     cache_policy_id            = "658327ea-f89d-4fab-a63d-7e88639e58f6"
     cached_methods             = ["GET", "HEAD"]
     compress                   = true
@@ -96,6 +97,7 @@ resource "aws_cloudfront_distribution" "root_distribution" {
   }
   default_cache_behavior {
     allowed_methods            = ["GET", "HEAD"]
+    # CachingDisabled
     cache_policy_id            = "4135ea2d-6df8-44a3-9df3-4b5a84be39ad"
     cached_methods             = ["GET", "HEAD"]
     compress                   = true
@@ -103,6 +105,7 @@ resource "aws_cloudfront_distribution" "root_distribution" {
     max_ttl                    = 0
     min_ttl                    = 0
     smooth_streaming           = false
+    # this bucket is configured as website bucket to redirect all requests to www address
     target_origin_id           = "${var.root_domain_name}.s3-website.eu-west-2.amazonaws.com"
     trusted_key_groups         = []
     trusted_signers            = []
@@ -159,7 +162,8 @@ resource "aws_cloudfront_distribution" "dev_distribution" {
   wait_for_deployment = true
   default_cache_behavior {
     allowed_methods            = ["GET", "HEAD"]
-    cache_policy_id            = "658327ea-f89d-4fab-a63d-7e88639e58f6"
+    # CachingDisabled - in dev so we can see UI changes immediately
+    cache_policy_id            = "4135ea2d-6df8-44a3-9df3-4b5a84be39ad"
     cached_methods             = ["GET", "HEAD"]
     compress                   = true
     default_ttl                = 0
