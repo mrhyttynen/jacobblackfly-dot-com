@@ -30,6 +30,7 @@ resource "aws_cloudfront_distribution" "www_distribution" {
     response_code         = 200
     response_page_path    = "/index.html"
   }
+  # DISABLE CACHING PERMANENTLY ON DEV TO SEE CHANGES IMMEDIATELY
   default_cache_behavior {
     allowed_methods            = ["GET", "HEAD"]
     cache_policy_id            = "658327ea-f89d-4fab-a63d-7e88639e58f6"

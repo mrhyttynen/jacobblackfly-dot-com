@@ -45,18 +45,13 @@ resource "aws_s3_bucket_policy" "www_website_bucket_policy" {
     "Id": "PolicyForCloudFrontPrivateContent",
     "Statement":
       {
-          "Sid": "9999",
+          "Sid": "1",
           "Effect": "Allow",
           "Principal": {
               "AWS": "arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity E6DNWGHFRLSXT"
           },
           "Action": "s3:GetObject",
-          "Resource": "arn:aws:s3:::www.${var.root_domain_name}/*",
-          "Condition": {
-              "StringEquals": {
-                  "AWS:SourceArn": "${aws_cloudfront_distribution.www_distribution.arn}"
-              }
-          }
+          "Resource": "arn:aws:s3:::www.${var.root_domain_name}/*"
       }
 }
 
@@ -71,18 +66,13 @@ resource "aws_s3_bucket_policy" "dev_website_bucket_policy" {
     "Id": "PolicyForCloudFrontPrivateContent",
     "Statement":
         {
-            "Sid": "9999",
+            "Sid": "1",
             "Effect": "Allow",
             "Principal": {
                 "AWS": "arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity E6DNWGHFRLSXT"
             },
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::dev.${var.root_domain_name}/*",
-            "Condition": {
-                "StringEquals": {
-                    "AWS:SourceArn": "${aws_cloudfront_distribution.dev_distribution.arn}"
-                }
-            }
+            "Resource": "arn:aws:s3:::dev.${var.root_domain_name}/*"
         }
 }
 
