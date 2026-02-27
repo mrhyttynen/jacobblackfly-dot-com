@@ -55,17 +55,25 @@ export const VideoPage: React.FC = () => {
       </h1>
       <p>Refresh page to update</p>
       <iframe
-        className="w-[90vw] max-w-[1000px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px]"
-        src="https://www.youtube.com/embed/drN7_hmVLh4?si=T66AoBorZzRFHMCS"
-        title="YouTube video player"
+        className="w-[45vw] max-w-[500px] h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px]"
+        src="https://www.youtube.com/embed/QY98wFTH0kI?si=QJzs6d4u-kr3Wj60"
+        title="YouTube video player for Holiday Feels"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
       ></iframe>
       <iframe
-        className="w-[90vw] max-w-[1000px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px]"
+        className="w-[45vw] max-w-[500px] h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px]"
+        src="https://www.youtube.com/embed/drN7_hmVLh4?si=T66AoBorZzRFHMCS"
+        title="YouTube video player for Searching"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe>
+      <iframe
+        className="w-[45vw] max-w-[500px] h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px]"
         src="https://www.youtube.com/embed/BMzRTILK1Aw?si=26gjodRhqgoIoy_u"
-        title="YouTube video player"
+        title="YouTube video player for Carrot Cake"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
