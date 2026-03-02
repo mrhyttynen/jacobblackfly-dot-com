@@ -10,9 +10,9 @@ export const AboutPage: React.FC = () => {
       Blackfly grew up surrounded by a mix of vintage and contemporary pop,
       classical music and classic rock and blues, before later discovering
       electronic music and RnB (Adele, Corinne Bailey Rae, AC/DC, The Beatles,
-      Rufus Du Sol, Moonchild). This music has molded Jacob’s sound, which
-      includes piano ballads with an electronic touch, pop-rock and even
-      90s-style hip hop, keeping a consistent focus on catchy melodies and
+      Rufus Du Sol, Moonchild). Echoes from these genres can be heard in Jacob’s
+      music, which includes piano ballads with an electronic touch, pop-rock and
+      even 90s-style hip hop, keeping a consistent focus on catchy melodies and
       memorable grooves. June 2025 saw the release of Jacob’s 4-track debut EP
       “Searching”, which includes the singles “Avoidant”, “Searching” and “180
       Degrees”, as well as music videos for the latter 2. The EP has garnered
